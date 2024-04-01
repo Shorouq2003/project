@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 15px;
+}
+
+/*navbar*/
+.nav {
+    background-color: rgb(175, 69, 69);
+    color: rgb(207, 207, 120);
+    overflow: auto;
+
+}
+
+.nav h1 {
+    padding: 20px;
+    float: left;
+}
+
+.nav a {
+    color: rgb(207, 207, 120);
+    text-decoration: none;
+}
+
+.nav ul {
+    float: right;
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    padding: 20px;
+    text-align: center;
+    display: block;
+    transition: 1s;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(245, 245, 220, 0.651);
+    color: rgb(175, 69, 69);
+}
+
+/*section*/
+.home {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5)70%, rgb(0, 0, 0, 0.5)30%), url(../css/images/download\ \(6\).jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 730px;
+}
+
+.home .title {
+    color: rgb(207, 207, 120);
+    text-align: center;
+    padding-top: 150px;
+}
+
+.title h2 {
+    padding: 40px;
+}
+
+.title a {
+    background-color: rgb(175, 69, 69);
+    color: rgb(207, 207, 120);
+    padding: 12px;
+    border: 1px solid rgb(207, 207, 120);
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 1s all;
+}
+
+.title a:hover {
+    background-color: rgba(207, 207, 120, 0.836);
+    color: rgb(175, 69, 69);
+    border: rgb(175, 69, 69);
+}
+
+.about {
+    padding: 10em 0 0;
+    height: 90vh;
+}
+
+.about .left {
+    width: 50%;
+    display: inline-block;
+    min-height: 100%;
+}
+
+.about .left h2 {
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.about .left p {
+    padding: 10px 20px;
+}
+
+.about .right {
+    display: inline-block;
+    padding: 0 100px;
+}
+
+.dowen {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: rgb(175, 69, 69);
+}
+
+.dowen h2 {
+    color: rgba(207, 207, 120, 0.836);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.dowen div {
+    margin: 20px 20px 20px 400px;
+    padding: 40px;
+    background-color: rgba(207, 207, 120, 0.836);
+    width: 800px;
+    border-radius: 0px 20px 0px 20px;
+    display: inline-block;
+    border: 5px dotted rgb(175, 69, 69);
+}
+
+.dowen img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.foot {
+    padding-top: 160px;
+    padding-bottom: 20px;
+    background-color: rgba(207, 207, 120, 0.836);
+}
+
+.foot h5 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/*contact*/
+.form {
+    width: 800px;
+    height: 600px;
+    background-color: rgb(175, 69, 69);
+    padding: 100px 40px 40px 40px;
+    margin: 90px 50px 50px 400px;
+    text-align: center;
+    border-radius: 0 50px;
+}
+
+.form:hover {
+    border: 5px dashed rgba(34, 34, 14, 0.836);
+}
+
+.form .input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid rgba(90, 90, 36, 0.836);
+    border-radius: 40px;
+    margin: 25px;
+}
+
+.form label {
+    margin: 0px 450px 0px 0px;
+    color: rgba(207, 207, 120, 0.836);
+}
+
+.form label:hover {
+    background-color: rgba(226, 213, 213, 0.26);
+}
+
+.form .submit {
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid rgba(90, 90, 36, 0.836);
+
+}
+/*media query*/
+@media (max-width:600px){
+    .nav{
+        display: grid;
+        text-align: center;
+    }
+}
+@media (max-width:900px) {
+    .about .left{
+        display: block;
+        width: 90%;
+        min-height: 0;
+    }
+    
+}
